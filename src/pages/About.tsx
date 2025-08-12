@@ -159,7 +159,7 @@ const About: React.FC = () => {
           </ScrollAnimation>
 
           {/* Coordinator Card 3 */}
-          <ScrollAnimation delay={0.6}>
+          {/* <ScrollAnimation delay={0.6}>
             <div className="w-full sm:w-[300px] bg-white shadow-lg rounded-lg p-6 text-center  border-l-4 border-orange-600 hover:shadow-xl transition duration-300">
               <div className="w-24 h-24 bg-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-12 h-12 text-white" />
@@ -169,7 +169,7 @@ const About: React.FC = () => {
               </h3>
               <p className="text-gray-600">Team Leader</p>
             </div>
-          </ScrollAnimation>
+          </ScrollAnimation> */}
         </div>
       </section>
     </div>

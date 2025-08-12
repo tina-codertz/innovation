@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight, Target, Eye, Award,Lightbulb,Users, Globe, ArrowRight } from 'lucide-react';
 import { useLanguage } from '../contexts/LanguageContext';
 import ScrollAnimation from '../components/UI/ScrollAnimation';
-import image1 from '../assets/photo1.jpg';
+// import image1 from '../assets/photo1.jpg';
 import image2 from '../assets/photo5.jpg';
 import image3 from '../assets/photo4.jpg';
 import image4 from '../assets/photo7.jpg';
@@ -34,7 +34,6 @@ const Home: React.FC = () => {
 
 
   const heroImages: string[] = [
-    image1,
     image2,
     image3,
     image4,

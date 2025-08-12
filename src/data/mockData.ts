@@ -2,20 +2,18 @@ import { TeamMember, Project, Partner } from "../types";
 import images1 from '../assets/im1.jpeg';
 import images2 from '../assets/im2.jpeg';
 import images3 from '../assets/im3.jpeg';
-import images4 from '../assets/im5.jpeg';
-import images5 from '../assets/im6.jpg';
+import images4 from '../assets/im4.jpeg';
+// import images5 from '../assets/im5.jpg';
 import images6 from '../assets/im7.jpeg';
-import images7 from '../assets/im8.jpeg';
+
 import images8 from '../assets/im9.jpg';
 import images9 from '../assets/im10.jpeg';
-import images10 from '../assets/im11.jpeg';
+
 import images11 from '../assets/im12.jpeg';
 import images12 from '../assets/im13.jpeg';
-import images13 from '../assets/im14.jpeg';
-import images14 from '../assets/im15.jpeg';
-import images15 from '../assets/im16.jpeg';
-import images16 from '../assets/im17.jpeg';
-import images17 from '../assets/im18.jpeg';
+
+
+
 
 
 
@@ -104,8 +102,8 @@ export const teamMembers: TeamMember[] = [
     name: "Dr.Godfrey Luwemba",
     role: "Department  Coordinator",
     category: "coordinator",
-    image:
-      " ",
+    image:"https://media.licdn.com/dms/image/v2/D5603AQHPkH2xNammmg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1700117038386?e=1758153600&v=beta&t=OKDmu-E8fI36fdxQN5G_llF4JZuTSj7oaNBJnVVFcPA"
+      ,
     email: "christina.kimario@aru.ac.tz",
     linkedin: "#",
     bio: "Coordinator overseeing all innovation hub activities and strategic partnerships.",
@@ -126,8 +124,8 @@ export const teamMembers: TeamMember[] = [
     name: "Mr.Alexander Moreka",
     role: "Project Coordinator",
     category: "coordinator",
-    image:
-      "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=400",
+    image:"https://scholar.googleusercontent.com/citations?view_op=view_photo&user=Qa76QEcAAAAJ&citpid=1"
+,
     email: "john.mushi@aru.ac.tz",
     linkedin: "#",
     bio: "Responsible for coordinating all innovative projects in the department and the university at large.",
@@ -142,8 +140,7 @@ export const teamMembers: TeamMember[] = [
     category: "member",
     images: [
       images4,
-      images7,
-      images10,
+      
      
     ],
     email: "asha.mwita@aru.ac.tz",
@@ -157,7 +154,7 @@ export const teamMembers: TeamMember[] = [
     category: "member",
     images: [
       images12,
-      images14,
+      
 
 
 
@@ -172,9 +169,8 @@ export const teamMembers: TeamMember[] = [
     role: "Team member",
     category: "member",
     images: [
-      images5,
-      images13,
-      images15,
+      images6,
+      
       
     ],
     email: "neema.joseph@aru.ac.tz",
@@ -188,8 +184,7 @@ export const teamMembers: TeamMember[] = [
     category: "member",
     images: [
       images11,
-      images16,
-      images17
+     
 
      
     ],
@@ -314,8 +309,6 @@ export const projects: Project[] = [
 ];
 
 import ErasmusLogo from '../assets/erasmusplus.svg';
-import VliruosLogo from '../assets/vliruos.svg';
-import ahumainLogo from '../assets/ahumain.png';
 import ardhiLogo from '../assets/ardhi.jpeg';
 
 export const partners: Partner[] = [
@@ -329,14 +322,14 @@ export const partners: Partner[] = [
   {
     id: '2',
     name: 'VLIR-UOS',
-    logo: VliruosLogo,
+    logo: "https://www.kuleuven.be/english/apply/images/logo-vlir-uos.png/@@download/image/Logo%20VLIR-UOS.png",
     website: 'https://www.vliruos.be/',
     description: 'Flemish Interuniversity Council for University Development Cooperation.'
   },
   {
     id: '3',
     name: 'AHUMAIN',
-    logo: ahumainLogo,
+    logo: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvXjuElZLKr0Mfh8RYpYJpfXDPdpQstaO13lWrhsvj6bPXuTFj",
     website: 'https://ahumain.com/',
     description: 'AI and digital innovation partner.'
   },

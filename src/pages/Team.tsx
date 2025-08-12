@@ -62,11 +62,11 @@ const Team: React.FC = () => {
             className="!pb-12 px-4"
           >
             {coordinators.map((member, index) => (
-              <SwiperSlide key={member.id}>
+              <SwiperSlide key={member.id} style={{ height: "100%" }}>
                 <ScrollAnimation delay={0.1 * index}>
-                  <div className="max-w-md mx-auto h-full">
+                  <div className="w-full h-full">
                     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
-                      <div className="relative">
+                      <div className="relative flex-shrink-0">
                         <img
                           src={member.image}
                           alt={member.name}
@@ -75,16 +75,18 @@ const Team: React.FC = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                       </div>
 
-                      <div className="p-6 flex flex-col flex-grow">
-                        <h3 className="text-xl font-bold text-[#000068] mb-2">
-                          {member.name}
-                        </h3>
-                        <p className="text-orange-600 font-medium mb-3">
-                          {member.role}
-                        </p>
-                        <p className="text-gray-600 text-sm leading-relaxed flex-grow mb-4">
-                          {member.bio}
-                        </p>
+                      <div className="p-6 flex flex-col flex-grow justify-between">
+                        <div>
+                          <h3 className="text-xl font-bold text-[#000068] mb-2">
+                            {member.name}
+                          </h3>
+                          <p className="text-orange-600 font-medium mb-3">
+                            {member.role}
+                          </p>
+                          <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                            {member.bio}
+                          </p>
+                        </div>
 
                         <div className="flex space-x-3 mt-auto">
                           {member.email && (
@@ -117,7 +119,7 @@ const Team: React.FC = () => {
       </section>
 
       {/* Mentors Section (Slider) */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <ScrollAnimation>
             <div className="text-center mb-16 ">
@@ -143,10 +145,10 @@ const Team: React.FC = () => {
             className="!pb-12"
           >
             {mentors.map((member, index) => (
-              <SwiperSlide key={member.id}>
+              <SwiperSlide key={member.id} style={{ height: "100%" }}>
                 <ScrollAnimation delay={0.1 * index}>
-                  <div className="bg-white rounded-lg justify-center  shadow-lg  overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div className="relative">
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+                    <div className="relative flex-shrink-0">
                       <img
                         src={member.image}
                         alt={member.name}
@@ -154,17 +156,19 @@ const Team: React.FC = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-blue-900 mb-2">
-                        {member.name}
-                      </h3>
-                      <p className="text-orange-600 font-medium mb-3">
-                        {member.role}
-                      </p>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                        {member.bio}
-                      </p>
-                      <div className="flex space-x-3">
+                    <div className="p-6 flex flex-col flex-grow justify-between">
+                      <div>
+                        <h3 className="text-xl font-bold text-blue-900 mb-2">
+                          {member.name}
+                        </h3>
+                        <p className="text-orange-600 font-medium mb-3">
+                          {member.role}
+                        </p>
+                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                          {member.bio}
+                        </p>
+                      </div>
+                      <div className="flex space-x-3 mt-auto">
                         {member.email && (
                           <a
                             href={`mailto:${member.email}`}
@@ -189,7 +193,7 @@ const Team: React.FC = () => {
             ))}
           </Swiper>
         </div>
-      </section>
+      </section> */}
 
       {/* Core Team Section (Slider) */}
       <section className="py-20 bg-white">
@@ -219,10 +223,10 @@ const Team: React.FC = () => {
             className="!pb-12"
           >
             {coreTeam.map((member, index) => (
-              <SwiperSlide key={member.id}>
+              <SwiperSlide key={member.id} style={{ height: "100%" }}>
                 <ScrollAnimation delay={0.1 * index}>
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div className="relative">
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+                    <div className="relative flex-shrink-0">
                       <img
                         src={member.image}
                         alt={member.name}
@@ -230,17 +234,19 @@ const Team: React.FC = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-blue-900 mb-2">
-                        {member.name}
-                      </h3>
-                      <p className="text-orange-600 font-medium mb-3">
-                        {member.role}
-                      </p>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                        {member.bio}
-                      </p>
-                      <div className="flex space-x-3">
+                    <div className="p-6 flex flex-col flex-grow justify-between">
+                      <div>
+                        <h3 className="text-xl font-bold text-blue-900 mb-2">
+                          {member.name}
+                        </h3>
+                        <p className="text-orange-600 font-medium mb-3">
+                          {member.role}
+                        </p>
+                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                          {member.bio}
+                        </p>
+                      </div>
+                      <div className="flex space-x-3 mt-auto">
                         {member.email && (
                           <a
                             href={`mailto:${member.email}`}
@@ -294,10 +300,10 @@ const Team: React.FC = () => {
             className="!pb-12"
           >
             {members.map((member, index) => (
-              <SwiperSlide key={member.id}>
+              <SwiperSlide key={member.id} style={{ height: "100%" }}>
                 <ScrollAnimation delay={0.1 * index}>
-                  <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                    <div className="relative">
+                  <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+                    <div className="relative flex-shrink-0">
                       {member.images && member.images.length > 1 ? (
                         <Swiper
                           spaceBetween={0}
@@ -329,16 +335,18 @@ const Team: React.FC = () => {
                       )}
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                     </div>
-                    <div className="p-6">
-                      <h3 className="text-xl font-bold text-blue-900 mb-2">
-                        {member.name}
-                      </h3>
-                      <p className="text-orange-600 font-medium mb-3">
-                        {member.role}
-                      </p>
-                      <p className="text-gray-600 text-sm leading-relaxed mb-4">
-                        {member.bio}
-                      </p>
+                    <div className="p-6 flex flex-col flex-grow justify-between">
+                      <div>
+                        <h3 className="text-xl font-bold text-blue-900 mb-2">
+                          {member.name}
+                        </h3>
+                        <p className="text-orange-600 font-medium mb-3">
+                          {member.role}
+                        </p>
+                        <p className="text-gray-600 text-sm leading-relaxed mb-4">
+                          {member.bio}
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </ScrollAnimation>
@@ -377,15 +385,23 @@ const Team: React.FC = () => {
             className="!pb-12"
           >
             {partners.map((partner, index) => (
-              <SwiperSlide key={partner.id}>
+              <SwiperSlide key={partner.id} style={{ height: "100%" }}>
                 <ScrollAnimation delay={0.1 * index}>
                   <div className="flex flex-col items-center justify-center min-h-[340px]">
                     <div className="mb-6 flex items-center justify-center">
                       <div className="rounded-full bg-white shadow-lg flex items-center justify-center w-40 h-40 overflow-hidden border-4 border-orange-600">
-                        {typeof partner.logo === 'string' ? (
-                          <img src={partner.logo} alt={partner.name} className="w-32 h-32 object-contain" />
+                        {typeof partner.logo === "string" ? (
+                          <img
+                            src={partner.logo}
+                            alt={partner.name}
+                            className="w-32 h-32 object-contain"
+                          />
                         ) : (
-                          <img src={partner.logo} alt={partner.name} className="w-32 h-32 object-contain" />
+                          <img
+                            src={partner.logo}
+                            alt={partner.name}
+                            className="w-32 h-32 object-contain"
+                          />
                         )}
                       </div>
                     </div>
