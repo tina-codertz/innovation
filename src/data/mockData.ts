@@ -309,7 +309,7 @@ export const projects: Project[] = [
 ];
 
 import ErasmusLogo from '../assets/erasmusplus.svg';
-import ardhiLogo from '../assets/ardhi.jpeg';
+// import ardhiLogo from '../assets/ardhi.jpeg';
 
 export const partners: Partner[] = [
   {
@@ -333,11 +333,11 @@ export const partners: Partner[] = [
     website: 'https://ahumain.com/',
     description: 'AI and digital innovation partner.'
   },
-  {
-    id: '4',
-    name: 'Ardhi University',
-    logo: ardhiLogo,
-    website: 'https://www.aru.ac.tz/',
-    description: 'Host university and key partner in innovation and research.'
-  }
+  // {
+  //   id: '4',
+  //   name: 'Ardhi University',
+  //   logo: ardhiLogo,
+  //   website: 'https://www.aru.ac.tz/',
+  //   description: 'Host university and key partner in innovation and research.'
+  // }
 ];
